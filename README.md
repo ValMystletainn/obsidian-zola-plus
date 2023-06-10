@@ -85,6 +85,9 @@ Improvements:
 
 To make your site more friendly to search engines, you can add a netlify plugin to automatically submit the new sitemap everytime you re-deploy the site. Just add the following to your `netlify.toml`. Remember to replace `baseUrl` with your `SITE_URL`.
 
+**Step 6: Change giscus url**
+Change giscus url to your obsidian vault git hub repo in copressonding position in `zola/templates/macros/comments.html`
+
 ```toml
 [[plugins]]
 package = "netlify-plugin-submit-sitemap"
