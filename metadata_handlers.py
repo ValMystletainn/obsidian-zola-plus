@@ -88,6 +88,7 @@ def aliases(list_of_aliases: list) -> str:
 
 def tags(tags_list: list) -> str:
     tags_out = ""
+    if tags_list is None: tags_list = []
     for tag in tags_list:
         tags_out += f"![{tag}](https://img.shields.io/badge/{tag}-{_random_color(tag)})\n"
     return tags_out
